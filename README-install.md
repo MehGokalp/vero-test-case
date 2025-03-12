@@ -3,8 +3,8 @@
 1. Clone repository
 2. Run `docker-compose up -d`
 3. Run `docker container exec -it vero-test-case-app_php-1 sh -c "cd /var/www/html && bin/composer install"`
-4. Import postman collection from `postman` folder
-5. Hit API to get PDF
+4. Import postman collection from `postman` folder (not really necessary it's just for your convenience)
+5. Hit API to get PDF: `http://localhost:8081?username=365&password1`
 
 # What exactly this project is doing and what we are looking for?
 1. This project is based on Symfony 7 and PHP 8.2
