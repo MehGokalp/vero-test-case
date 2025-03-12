@@ -16,6 +16,8 @@ class SelectTasksUseCase
     // a global place called CredentialsStorage (similar to Symfony's token storage) to avoid passing it around
     public function getTasks(string $username, string $password): ResponseDTO
     {
+        // I didn't cache this response because I don't know if this is a public or private data
+        // or what is the cache policy for this data
         $httpResponse = $this->requester->request(Endpoint::TASKS_SELECT, [
             'headers' => [
                 'Authorization' => sprintf(
