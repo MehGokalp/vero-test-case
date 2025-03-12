@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "87a21d74-3962-473b-b654-d525b337c101",
+		"name": "BauBuddy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15628178"
+	},
+	"item": [
+		{
+			"name": "Select Tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/?username=365&password=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "365"
+						},
+						{
+							"key": "password",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

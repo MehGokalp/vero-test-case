@@ -26,6 +26,7 @@ class Service extends AbstractService implements ServiceInterface
         $errors = $this->validator->validate($request);
 
         if (count($errors) > 0) {
+            // I just returned simple string, you can return json or html depending on API definitions
             return new Response((string)$errors, Response::HTTP_BAD_REQUEST);
         }
 
