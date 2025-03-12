@@ -14,7 +14,7 @@
             </thead>
             <tbody>
                 {% for task in dto.tasks %}
-                    <tr>
+                    <tr style="background: {{ task.colorCode }}">
                         <td>{{ task.task }}</td>
                         <td>{{ task.title }}</td>
                         <td>{{ task.description }}</td>
