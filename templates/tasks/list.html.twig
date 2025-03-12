@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <h1>Tasks</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Color Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for task in dto.tasks %}
+                    <tr>
+                        <td>{{ task.task }}</td>
+                        <td>{{ task.title }}</td>
+                        <td>{{ task.description }}</td>
+                        <td>{{ task.colorCode }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>
